@@ -19,3 +19,15 @@
 
 // > classic concatenation
 // console.log("Hello " + name + ", would you like a " + drink + "?");
+
+// **String length**
+// const name = "Longer Caroline";
+// const len = name.length;
+
+// console.log(`${name} is ${len} characters long`);
+
+// **String letter**
+const name = "Caroline";
+const letter = name[0];
+
+console.log(`The first letter of ${name} is ${letter}.`);

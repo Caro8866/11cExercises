@@ -10,7 +10,7 @@ console.log(`from 0-9`); */
 
 // From 1 to 10
 
-/* for (counter = 1; counter < 11; counter++) {
+/* for (counter = 1; counter <= 10; counter++) { // can do <= 10 or < 11 depends on case
   console.log(counter);
 }
 console.log(`from 1-10`); */

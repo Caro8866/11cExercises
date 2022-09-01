@@ -14,7 +14,7 @@ const art9 = document.querySelector("#artwork9");
 
 // *Start generating function*
 function start() {
-  // *Variables*
+  // *Variables*s
   let i;
 
   // *Artwork 1*

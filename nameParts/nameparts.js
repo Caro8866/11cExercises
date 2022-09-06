@@ -17,12 +17,12 @@ console.log(`My last name is ${lastName}`);
  */
 
 // ! fullName( lastName, firstName [, middleName] )
-let fullName = "Caroline Thostrup";
-function showFullName(lastName, firstName, [middleName]) {
-  firstName = fullName.substring(0, indexOf(" "));
-  return firstName;
-  return middleName;
-  return lastName;
-}
 
-console.log(showFullName("Thostrup", "Caroline", "Albinus"));
+function showFullName(lastName, firstName, middleName) {
+  if (middleName) {
+    return `${firstName} ${middleName} ${lastName}`;
+  }
+  return `${firstName} ${lastName}`;
+}
+console.log(showFullName("Thostrup", "Caroline", "Albinus-Bjarnø"));
+console.log(showFullName("Lind", "Peter"));

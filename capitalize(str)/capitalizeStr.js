@@ -1,7 +1,6 @@
 let firstName;
-function capitalize(firstName) {
-  const firstLetterCapital = firstName[0].toUpperCase() + firstName.substring(1).toLowerCase();
-  return firstLetterCapital;
+function capitalize(str) {
+  return str[0].toUpperCase() + str.substring(1).toLowerCase();
 }
 
 console.log(capitalize("CAROLINE"));

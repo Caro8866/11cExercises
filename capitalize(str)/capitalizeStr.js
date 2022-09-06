@@ -5,3 +5,6 @@ function capitalize(firstName) {
 }
 
 console.log(capitalize("CAROLINE"));
+console.log(capitalize("peter"));
+console.log(capitalize("maximulious"));
+console.log(capitalize("klauS"));

@@ -9,7 +9,6 @@ console.log(`My first name is ${firstName}`);
 let middleName = fullName.substring(9, 22);
 console.log(`My middle name is ${middleName}`);
 
-// Lasr name
-/* let middleName = fullName.substring(9, 22);
-console.log(`My middle name is ${middleName}`);
- */
+// Last name
+let lastName = fullName.substring(18, 22);
+console.log(`My last name is ${lastName}`);

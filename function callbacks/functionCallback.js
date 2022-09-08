@@ -1,5 +1,5 @@
 "use strict";
-
+/*
 function congreet(name) {
   console.log("Congrats " + name);
 }
@@ -45,3 +45,13 @@ console.log("Is Person3 hired?", person3.hired);
 fireOrHire(fire, person3);
 
 console.log("Is Person3 hired?", person3.hired);
+*/
+//?---------------------------------------------------------------------
+
+const people = ["Harry", "Ron", "Hermione", "Neville"];
+
+function testParams(a, b, c) {
+  console.log(`a(person): ${a}, b(index): ${b}, c(array): ${c}`);
+}
+
+people.forEach(testParams);

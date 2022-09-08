@@ -1,7 +1,47 @@
-function greeting(firstName) {
-  return `Hello ${firstName}`;
+"use strict";
+
+function congreet(name) {
+  console.log("Congrats " + name);
+}
+console.log("Wait for it...");
+setTimeout(congreet, 10, "Fred");
+
+//? ----------------------------------
+
+function hire(person) {
+  person.hired = true;
 }
 
-const sayHi = greeting;
+function fire(person) {
+  person.hired = false;
+}
 
-sayHi("Caroline");
+function fireOrHire(action, person) {
+  action(person);
+}
+const person3 = {
+  firstName: "Harry",
+  lastName: "Potter",
+  hired: true,
+};
+
+const person4 = {
+  firstName: "Fred",
+  lastName: "Weasley",
+  hired: false,
+};
+console.log("Is Person4 hired?", person4.hired);
+
+hire(person4);
+
+console.log("Is Person4 hired?", person4.hired);
+
+fireOrHire(fire, person4);
+
+console.log("Is Person4 hired?", person4.hired);
+
+console.log("Is Person3 hired?", person3.hired);
+
+fireOrHire(fire, person3);
+
+console.log("Is Person3 hired?", person3.hired);
